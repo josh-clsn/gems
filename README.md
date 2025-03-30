@@ -130,7 +130,7 @@ gems download <archive_address_hex> -o ./my_downloaded_archive --archive
 
 ## Important Notes
 
-*   **Costs:** Uploading data and creating archives costs AttoTokens. Ensure your wallet has funds.
+*   **Costs:** Uploading data and creating archives costs AttoTokens and ETH. Ensure your wallet has funds.
 *   **Private Key Security:** Protect your `.env` file. Losing your private key means losing access to your wallet and potentially control over mutable data like Registers (though we aren't using them directly for archiving currently).
 *   **Large Files:** Uploading very large files can take time and may be more prone to intermittent network issues. The retry mechanism helps mitigate this.
 *   **Archiving:** 
