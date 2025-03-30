@@ -121,7 +121,7 @@ Provide the `ArchiveAddress` and an *output directory*. Add the `--archive` flag
 ```bash
 gems download <archive_address_hex> --output-path <local/save/directory> --archive
 # Example:
-gems download <hex_address_of_the_archive> -o ./my_downloaded_archive --archive
+gems download <archive_address_hex> -o ./my_downloaded_archive --archive
 ```
 
 *   `<archive_address_hex>`: The hex string of the `Archive Address` itself.
