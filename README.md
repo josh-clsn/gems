@@ -4,7 +4,7 @@
 
 *   Upload files.
 *   Optionally verify uploads by downloading the data immediately.
-*   Optionally create a `PublicArchive`.
+*   Optionally create a `PublicArchive` automatically after upload.
 *   Create a `PublicArchive` for a file already on the network using its `DataAddress`.
 *   Download single files using their `DataAddress`.
 *   Download all files referenced within a `PublicArchive` using its `ArchiveAddress`.
