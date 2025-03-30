@@ -25,7 +25,7 @@
 
 2.  **Create `.env` file:** In the root directory of the project (where `Cargo.toml` is), create a file named `.env`.
 
-3.  **Add Private Key:** Add your Autonomi private key (in hex format, usually without the `0x` prefix) to the `.env` file:
+3.  **Add Private Key:** Add your ETH private key (in hex format, usually without the `0x` prefix) to the `.env` file:
     ```dotenv
     AUTONOMI_PRIVATE_KEY=<your_actual_private_key_hex>
     ```
