@@ -138,6 +138,4 @@ gems download <archive_address_hex> -o ./my_downloaded_archive --archive
     *   When using the *separate* `archive` command, you can specify full relative paths for entries.
     *   Note: When choosing to archive *during the `upload` command*, the tool currently uses only the base filename from the original path for the entry within the new archive.
 
-## License
 
-(You should add license information here, e.g., MIT, GPL, etc.) 
