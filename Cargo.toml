@@ -1,0 +1,14 @@
+[package]
+name = "gems"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Point to the user's fork
+autonomi = { git = "https://github.com/josh-clsn/autonomi.git", branch = "main", features = ["loud"] }
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+eyre = "0.6"
+bytes = "1"
+hex = "~0.4.3" # Often needed for key handling, adding proactively
+dotenvy = "0.15" # Add dotenvy for loading .env files 
