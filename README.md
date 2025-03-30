@@ -19,8 +19,8 @@
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <repository_url> # Replace <repository_url> with the actual URL
-    cd gems # Or the name of the cloned directory
+    git clone git@github.com:josh-clsn/gems.git
+    cd gems
     ```
 
 2.  **Create `.env` file:** In the root directory of the project (where `Cargo.toml` is), create a file named `.env`.
