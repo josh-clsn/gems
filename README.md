@@ -127,14 +127,5 @@ gems download <archive_address_hex> -o ./my_downloaded_archive --archive
 *   `--output-path` (`-o`): The *directory* where the archive contents should be saved. Any directory structure specified in the archive's paths (see `archive` command above) will be recreated within this output directory.
 *   `--archive`: This flag tells the command to treat the address as an archive and download its contents.
 
-## Important Notes
-
-*   **Costs:** Uploading data and creating archives costs AttoTokens and ETH. Ensure your wallet has funds.
-*   **Private Key Security:** Protect your `.env` file. Losing your private key means losing access to your wallet and potentially control over mutable data like Registers (though we aren't using them directly for archiving currently).
-*   **Large Files:** Uploading very large files can take time and may be more prone to intermittent network issues. The retry mechanism helps mitigate this.
-*   **Archiving:** 
-    *   Creating an archive (`PublicArchive`) primarily stores metadata (paths -> data addresses). It does not duplicate the file data itself.
-    *   When using the *separate* `archive` command, you can specify full relative paths for entries.
-    *   Note: When choosing to archive *during the `upload` command*, the tool currently uses only the base filename from the original path for the entry within the new archive.
 
 
