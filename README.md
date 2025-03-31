@@ -29,7 +29,6 @@
     ```dotenv
     AUTONOMI_PRIVATE_KEY=<your_actual_private_key_hex>
     ```
-    **IMPORTANT:** Keep this file secure and **never commit it to version control**. Add `.env` to your `.gitignore` file.
 
 4.  **Install using Cargo:** This compiles the tool and places the `gems` executable in your Cargo binary path (`~/.cargo/bin/` by default), making it available as a command.
     ```bash
