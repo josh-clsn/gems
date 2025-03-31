@@ -13,7 +13,7 @@
 
 *   **Rust Toolchain:** Ensure you have Rust and Cargo installed. If not, follow the instructions at [rustup.rs](https://rustup.rs/). Cargo is included with Rust.
 *   **Git:** Needed to clone the repository.
-*   **ETH Wallet:** You need an ETH wallet private key with sufficient funds ANT & ETH on the mainnet to pay for uploads and archive creation.
+*   **ETH Wallet:** You need an ETH wallet private key with sufficient funds ANT & ETH on the Arbitrum Network to pay for uploads and archive creation.
 
 ## Installation
 
