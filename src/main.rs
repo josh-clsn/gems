@@ -84,7 +84,7 @@ fn ask_yes_no(prompt: &str) -> Result<bool> {
     }
 }
 
-// Updated function to use PublicArchive and add retries
+// Function to use PublicArchive and add retries
 async fn perform_archive_action(
     client: &Client,
     payment: PaymentOption,
@@ -134,7 +134,7 @@ async fn perform_archive_action(
     let (cost, archive_address) = archive_upload_result
         .ok_or_else(|| eyre!("Archive upload failed after {} attempts.", max_retries))?;
 
-    println!("Final Archive Upload successful!");
+    println!("Archive Upload successful!");
     println!("  Archive Cost: {} AttoTokens", cost);
     println!("  Archive Address: {:?}", archive_address);
 
@@ -229,13 +229,13 @@ async fn handle_upload(client: Client, payment: PaymentOption, args: UploadArgs)
         .ok_or_else(|| eyre!("Upload failed after {} attempts.", max_retries))?;
 
     // If upload succeeded, proceed based on answers given earlier
-    println!("\nFinal Upload successful!");
+    println!("\nUpload successful!");
     println!("  Cost: {} AttoTokens", cost);
     println!("  Data Address: {:?}", data_addr);
 
     // --- Conditional Download/Verification (based on earlier answer) ---
     if should_verify {
-        println!("\nProceeding with download and verification as requested...");
+        println!("\nProceeding with download and verification...");
         println!("Downloading file using data_get_public...");
         match client.data_get_public(&data_addr).await {
             Ok(fetched_data) => {
@@ -268,12 +268,12 @@ async fn handle_upload(client: Client, payment: PaymentOption, args: UploadArgs)
             }
         }
     } else {
-        println!("Skipping download and verification as requested.");
+        println!("Skipping download and verification.");
     }
 
     // --- Conditional Archive (based on earlier answer) ---
     if should_archive {
-        println!("\nProceeding with archive creation as requested...");
+        println!("\nProceeding with archive creation...");
         match perform_archive_action(
              &client,
              payment.clone(), // Clone payment as it might have been consumed if verify ran
@@ -290,7 +290,7 @@ async fn handle_upload(client: Client, payment: PaymentOption, args: UploadArgs)
             }
          }
     } else {
-        println!("Skipping archive creation as requested.");
+        println!("Skipping archive creation.");
     }
 
     println!("\nUpload process completed.");
