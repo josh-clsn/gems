@@ -147,7 +147,7 @@ async fn main() -> Result<()> {
     dotenvy::dotenv().ok();
     let cli = Cli::parse();
 
-    println!("Initializing Autonomi client...");
+    println!("Initializing client...");
     let client = Client::init().await.wrap_err("Failed to initialize client")?;
     println!("Client initialized.");
 
